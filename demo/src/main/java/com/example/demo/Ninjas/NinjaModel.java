@@ -1,5 +1,6 @@
-package com.example.demo;
+package com.example.demo.Ninjas;
 
+import com.example.demo.Missoes.MissoesModel;
 import jakarta.persistence.*;
 
 @Entity
@@ -7,10 +8,22 @@ import jakarta.persistence.*;
 public class NinjaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
-    String nome;
-    String email;
-    int idade;
+   private long id;
+    private String nome;
+    private String email;
+    private int idade;
+    //varios Ninjas para uma missao
+    @ManyToOne
+    @JoinColumn(name = "missoes_id")
+    private MissoesModel missoes;
+
+    public MissoesModel getMissoes() {
+        return missoes;
+    }
+
+    public void setMissoes(MissoesModel missoes) {
+        this.missoes = missoes;
+    }
 
     public NinjaModel() {
     }
