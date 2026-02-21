@@ -1,0 +1,23 @@
+[33mcommit e010aa0ee4cc4dd2a782a7871f4b39f4c14386da[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: AkatznnX <akateff326@gmail.com>
+Date:   Sat Feb 21 08:47:09 2026 -0300
+
+    feat: put a lombok in entitys.
+
+[33mcommit deba9138d2dd6ba14fab9ffc413a103a2bb03777[m
+Author: AkatznnX <akateff326@gmail.com>
+Date:   Fri Feb 20 15:34:59 2026 -0300
+
+    algumas novas funcionalidades @manytoone/@onetomany, e tambem arquitetura em camdas
+
+[33mcommit 7127b06c5c7210ff1e9dab966a807a36f7264979[m
+Author: AkatznnX <akateff326@gmail.com>
+Date:   Tue Feb 17 17:43:38 2026 -0300
+
+    fiz a entity Ninja
+
+[33mcommit 391cb362f0c0d4d9e5dd2e0f8fc00ef8339a8422[m
+Author: AkatznnX <akateff326@gmail.com>
+Date:   Mon Feb 16 16:37:12 2026 -0300
+
+    first commit
