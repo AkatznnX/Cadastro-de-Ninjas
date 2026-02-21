@@ -3,12 +3,18 @@ package com.example.demo.Missoes;
 
 import com.example.demo.Ninjas.NinjaModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.AnyDiscriminatorImplicitValues;
 
 import java.util.List;
 
 @Entity
 @Table(name = "tb_missoes")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class MissoesModel {
 
     @Id
@@ -20,45 +26,5 @@ public class MissoesModel {
     @OneToMany(mappedBy = "missoes")
     private List<NinjaModel> ninja;
 
-    public MissoesModel() {
-    }
 
-    public MissoesModel(String nome, long id, String dificuldade, List<NinjaModel> ninja) {
-        this.nome = nome;
-        this.id = id;
-        this.dificuldade = dificuldade;
-        this.ninja = ninja;
-    }
-
-    public List<NinjaModel> getNinja() {
-        return ninja;
-    }
-
-    public void setNinja(List<NinjaModel> ninja) {
-        this.ninja = ninja;
-    }
-
-    public String getDificuldade() {
-        return dificuldade;
-    }
-
-    public void setDificuldade(String dificuldade) {
-        this.dificuldade = dificuldade;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 }
