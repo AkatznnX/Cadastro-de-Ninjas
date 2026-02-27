@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class NinjaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-   private long id;
+    private long id;
     private String nome;
     @Column(unique = true)
     private String email;
