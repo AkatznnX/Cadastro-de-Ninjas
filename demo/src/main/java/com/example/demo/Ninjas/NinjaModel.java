@@ -1,6 +1,7 @@
 package com.example.demo.Ninjas;
 
 import com.example.demo.Missoes.MissoesModel;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
