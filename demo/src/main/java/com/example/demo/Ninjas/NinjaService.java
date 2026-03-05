@@ -25,6 +25,9 @@ public NinjaModel listarId(Long id){
     Optional<NinjaModel> idDeleter= ninjaRepository.deleteById(id);
     return idDeleter.orElse(null);
 }*/
+    public NinjaModel CriarNinja(NinjaModel ninja){
+        return ninjaRepository.save(ninja);
+    }
 
 
 
