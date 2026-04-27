@@ -21,8 +21,8 @@ public class NinjaController {
 
 
     @PostMapping("/create")
-    public NinjaModel CriarNinjas( @RequestBody NinjaModel ninjaModel){
-        return ninjaService.CriarNinja(ninjaModel);
+    public NinjaDTO CriarNinjas( @RequestBody NinjaDTO ninjaDTO){
+        return ninjaService.CriarNinja(ninjaDTO);
     }
 
 
@@ -38,8 +38,8 @@ public class NinjaController {
     }
 
 
-    @PutMapping("/alterarId")
-    public String alterarNinjaId(){
+    @PatchMapping("/alterar/{id}")
+    public String alterarNinjaId(@PathVariable Long id){
         return "ninja alterado pelo id";
     }
 
